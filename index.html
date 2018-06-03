@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"/>
+  </head>
+
+  <body>
+    <!--Introduction-->
+    <div class="container">
+      <h1>Sum Search</h1>
+      <p>Given a set of numbers, find subsets of those numbers which add up to a given target sum.</p>
+      <button class="btn" id="insert-example-button">Insert Example of Count</button>
+      <input type="text" id="insert-example-count-box" value="30"/>
+    </div>
+    <hr>
+    
+    <!--Inputs-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label>Numbers</label>
+          <input type="text" id="numbers-box">
+        </div>
+       </div>
+       <div class = "row">
+        <div class="col-md-6 mb-3">
+          <label>Target Sum</label>
+          <input type="text" id="target-sum-box">
+        </div>
+      </div>
+      <div class = "row">
+        <div class="col-md-6 mb-3">
+          <label>Percent Tolerance</label>
+          <input type="text" id="percent-tolerance-box" maxlength="2" value="5">
+          <label>%</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <button class="btn" id="start-button">Start</button>
+          <button class="btn" id="stop-button">Stop</button>
+        </div>
+      </div>
+    </div>
+    <hr>
+    
+    <!--Console-->
+    <div class="container">
+      <div id="status-box"></div>
+      <div id="console">
+      </div>
+    </div>
+    
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="mersenne-twister.js"></script>
+    <script src="sum-search.js"></script>
+  </body>
+</html>
